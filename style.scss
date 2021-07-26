@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#title {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.container-title {
+  padding: 20px 0;
+  text-align: center;
+  text-decoration: underline;
+  color: #fff;
+  background: steelblue;
+}
+
+.event-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 0;
+  
+  &:nth-child(odd) { background: #eee; }
+}
+
+.event-year {
+  flex-basis: 75px;
+  font-style: italic;
+}
+
+.event-title {
+  flex-basis: 70%;
+}
+
+.event-sources {
+  flex-basis: 60px;
+
+  * {
+    margin-left: 1px;
+    margin-right: 1px;
+    font-size: 0.9rem;
+  }
+}
